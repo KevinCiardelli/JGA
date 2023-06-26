@@ -1,0 +1,22 @@
+@import url('https://fonts.google.com/specimen/Lobster');
+
+
+* {
+    box-sizing: border-box;
+    font-family: Lobster;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    background-color: azure;
+}
