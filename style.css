@@ -2,17 +2,18 @@
 
 * {
     box-sizing: border-box;
-    font-family: Lobster;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 
 html, body {
-    margin: 20px;
+    margin: 0;
     padding: 0;
+    background-color: rgb(82,97,107);
 }
 
 .nav ul {
-    margin: 0;
+    margin: 20px;
     padding: 0;
 }
 .nav li {
@@ -23,7 +24,6 @@ html, body {
     display: inline-block;
     color: white;
     text-decoration: none;
-    padding: 10px;
     font-size: large;
     padding-left: 40px;
 }
@@ -39,6 +39,7 @@ html, body {
 .main-header {
     background-color:  black;
     text-align: center;
+    margin: 20px;
 }
 
 .image {
@@ -46,10 +47,129 @@ html, body {
     height: 165px;
     padding-top: 20px;
     padding-bottom: 10px;
-    border-radius: 30%;
+    border-color: white;
 }
 
 .intro {
     text-align: center;
     font-size: 22px;
+    padding: 150px;
+    padding-top: 20px;
+    font-family: "Arial";
+    color: white
+}
+
+
+.FrontImage {
+    width: 375px;
+    height: 333px;
+    padding-right: 50px;
+}
+
+.introbody {
+    padding: 50px;
+    display: flex;
+    text-align: left;
+}
+
+.introparagraph {
+    line-height: 1.5;
+    min-width: 500px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer {
+    background-color: black;
+    margin: 0;
+    height: 200px;
+    color: white;
+    display: flex;
+    padding-top: 20px;
+}
+
+.footerimage {
+    width: 250px;
+    height: 165px;
+    border-color: white;
+    padding-left: 30px;
+    padding-top: 5px;
+}
+.footertext {
+    color: white;
+    text-align: left;
+    line-height: 1.3;
+    padding-top: 20px;
+}
+
+.footerbox {
+    width: 80px;
+    height: 135px;
+    background-color: black;
+}
+.footerbox2 {
+    width: 60px;
+    height: 100px;
+    background-color: black;
+}
+
+.contactinfo {
+    font-size: large;
+    color: white;
+    display: flex;
+}
+.contact {
+    font-size: x-large;
+
+    color: white;
+}
+.pageImageParent {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+}
+.pageImage {
+    width: 310px;;
+}
+
+.pageImageBoxes {
+    width: 100px;
+    height: 100px;
+    background-color:rgb(82,97,107);
+}
+
+.navButtonsParent{
+    display: flex;
+    text-align: center;
+    height: 10px;
+    background-color: rgb(82,97,107);
+    padding:20px;
+}
+.navButtons {
+    text-decoration: none;
+    font-size: 100%;
+    font-weight: 500;
+    width: 200px;
+    height: 75px;
+    border-radius: 20%;
+    border-color: black;
+    border-style: outset;
+    background-color: rgb(219, 219, 219);
+    color: grey;
+    
+}
+
+.navButtons a:hover{
+    color: black;
+}
+
+.navBox{
+    width: 325px;
+    height: 100px;
+    background-color:rgb(82,97,107);
+}
+
+.navMiddleBox{
+    width: 70px;
+    height: 100px;
+    background-color:rgb(82,97,107);
 }
