@@ -51,14 +51,23 @@ html, body {
 }
 
 .intro {
+    background-color: red;
     text-align: center;
     font-size: 22px;
-    padding: 150px;
     padding-top: 20px;
+    padding-right: 150px;
+    padding-left: 150px;
     font-family: "Arial";
     color: white
 }
 
+.introbody {
+    padding: 50px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: purple;
+}
 
 .FrontImage {
     width: 375px;
@@ -66,16 +75,33 @@ html, body {
     padding-right: 50px;
 }
 
-.introbody {
-    padding: 50px;
-    display: flex;
-    text-align: left;
-}
-
 .introparagraph {
     line-height: 1.5;
     min-width: 500px;
     font-family: 'Times New Roman', Times, serif;
+}
+.imagebody {
+    background-color: green;
+    text-align: center;
+    padding-right: 150px;
+    padding-left: 150px;
+    padding-top: 20px;
+    font-family: "Arial";
+    color: white
+}
+
+.images {
+    padding: 50px;
+    display: inline-flex;
+    background-color: purple;
+}
+
+
+.pageImage {
+    width: 410px;
+    height:: 410px;
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
 footer {
@@ -121,20 +147,6 @@ footer {
     font-size: x-large;
 
     color: white;
-}
-.pageImageParent {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display: flex;
-}
-.pageImage {
-    width: 310px;;
-}
-
-.pageImageBoxes {
-    width: 100px;
-    height: 100px;
-    background-color:rgb(82,97,107);
 }
 
 .navButtonsParent{
