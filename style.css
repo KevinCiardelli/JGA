@@ -100,7 +100,7 @@ html, body {
 
 .pageImage {
     width: 410px;
-    height:: 410px;
+    height: 410px;
     padding-right: 25px;
     padding-left: 25px;
 }
@@ -151,11 +151,8 @@ footer {
 }
 
 .navButtonsParent{
-    display: flex;
-    text-align: center;
-    height: 10px;
+    display: inline-flex;
     background-color: rgb(82,97,107);
-    padding:20px;
 }
 .navButtons {
     text-decoration: none;
@@ -168,18 +165,13 @@ footer {
     border-style: outset;
     background-color: rgb(219, 219, 219);
     color: grey;
-    
 }
 
 .navButtons a:hover{
     color: black;
 }
 
-.navBox{
-    width: 325px;
-    height: 100px;
-    background-color:rgb(82,97,107);
-}
+
 
 .navMiddleBox{
     width: 70px;
