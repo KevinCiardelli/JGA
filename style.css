@@ -1,6 +1,5 @@
 @import url('https://fonts.google.com/specimen/Lobster');
 
-
 * {
     box-sizing: border-box;
     font-family: Lobster;
@@ -8,7 +7,7 @@
 
 
 html, body {
-    margin: 0;
+    margin: 20px;
     padding: 0;
 }
 
@@ -16,7 +15,41 @@ html, body {
     margin: 0;
     padding: 0;
 }
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: large;
+    padding-left: 40px;
+}
+.main-nav {
+    text-align: center;
+    color: white
+}
+
+.nav a:hover {
+    color: rgba(255,255,255, .3);
+}
 
 .main-header {
-    background-color: azure;
+    background-color:  black;
+    text-align: center;
+}
+
+.image {
+    width: 250px;
+    height: 165px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-radius: 30%;
+}
+
+.intro {
+    text-align: center;
+    font-size: 22px;
 }
