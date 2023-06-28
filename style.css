@@ -6,21 +6,25 @@
 }
 
 /*index.html page */
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
-    background-color: rgb(82,97,107);
+    background-color: rgb(82, 97, 107);
 }
+
 /*header for all pages */
 .main-header {
-    background-color:  black;
+    background-color: black;
     text-align: center;
     margin: 20px;
 }
+
 .nav ul {
     margin: 20px;
     padding: 0;
 }
+
 .nav li {
     display: inline;
 }
@@ -32,13 +36,14 @@ html, body {
     font-size: large;
     padding-left: 40px;
 }
+
 .main-nav {
     text-align: center;
     color: white
 }
 
 .nav a:hover {
-    color: rgba(255,255,255, .3);
+    color: rgba(255, 255, 255, .3);
 }
 
 
@@ -49,9 +54,10 @@ html, body {
     padding-bottom: 10px;
     border-color: white;
 }
+
 /*intro photo and bio */
 .intro {
-    background-color: rgb(82,97,107);
+    background-color: rgb(82, 97, 107);
     text-align: center;
     font-size: 22px;
     padding-top: 20px;
@@ -66,13 +72,14 @@ html, body {
     display: flex;
     text-align: center;
     align-items: center;
-    background-color: rgb(82,97,107);
+    background-color: rgb(82, 97, 107);
 }
 
 .FrontImage {
     width: 375px;
     height: 333px;
     padding-right: 50px;
+    filter: drop-shadow(10px 10px 10px black);
 }
 
 .introparagraph {
@@ -83,7 +90,7 @@ html, body {
 
 /*display images on landing page */
 .imagebody {
-    background-color: rgb(82,97,107);
+    background-color: rgb(82, 97, 107);
     text-align: center;
 
     padding-right: 150px;
@@ -97,7 +104,7 @@ html, body {
 .images {
 
     display: inline-flex;
-    background-color: rgb(82,97,107);
+    background-color: rgb(82, 97, 107);
 }
 
 
@@ -106,15 +113,17 @@ html, body {
     height: 350px;
     padding-right: 25px;
     padding-left: 25px;
+    filter: drop-shadow(10px 10px 10px black);
 }
 
 
 /*navigation buttons */
-.navButtonsParent{
+.navButtonsParent {
     display: inline-flex;
-    background-color: rgb(82,97,107);
-    padding:20px;
+    background-color: rgb(82, 97, 107);
+    padding: 20px;
 }
+
 .navButtons {
     text-decoration: none;
     font-size: 110%;
@@ -125,18 +134,18 @@ html, body {
     border-color: black;
     border-style: outset;
     background-color: rgb(219, 219, 219);
-    color: grey;
+    color: rgb(80, 80, 80);
     cursor: pointer;
 }
 
-.navButtons:hover{
+.navButtons:hover {
     color: black;
 }
 
-.navMiddleBox{
+.navMiddleBox {
     width: 70px;
     height: 100px;
-    background-color:rgb(82,97,107);
+    background-color: rgb(82, 97, 107);
 }
 
 /*footer for all pages */
@@ -156,6 +165,7 @@ footer {
     padding-left: 30px;
     padding-top: 5px;
 }
+
 .footertext {
     color: white;
     text-align: left;
@@ -168,6 +178,7 @@ footer {
     height: 135px;
     background-color: black;
 }
+
 .footerbox2 {
     width: 60px;
     height: 100px;
@@ -179,6 +190,7 @@ footer {
     color: white;
     display: flex;
 }
+
 .contact {
     font-size: x-large;
 
@@ -187,3 +199,43 @@ footer {
 
 
 /*contact.html page */
+.contactheader {
+    display: inline-flex;
+    padding-bottom: 20px;
+}
+
+.double_element{
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: rgb(82, 97, 107);
+    padding-top: 20px;;
+}
+
+.double_element i{
+    border-style: inset;
+    border-color: white;
+    width: 70px;
+    height: 70px;
+    padding-top: 10px;
+    border-radius: 100%;
+}
+.form_and_image {
+    display: inline-flex;
+    padding: 30px;
+}
+
+.contactimage{
+    width: 500px;
+    height: 425px;
+    padding-right: 25px;
+    padding-left: 25px;
+    filter: drop-shadow(10px 10px 10px black);
+}
+
+.email {
+    text-decoration: none;
+    color: white;
+}
+.hrblock{
+    border-color:rgba(185, 187, 190, 0);
+}
