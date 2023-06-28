@@ -5,13 +5,18 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-
+/*index.html page */
 html, body {
     margin: 0;
     padding: 0;
     background-color: rgb(82,97,107);
 }
-
+/*header for all pages */
+.main-header {
+    background-color:  black;
+    text-align: center;
+    margin: 20px;
+}
 .nav ul {
     margin: 20px;
     padding: 0;
@@ -36,11 +41,6 @@ html, body {
     color: rgba(255,255,255, .3);
 }
 
-.main-header {
-    background-color:  black;
-    text-align: center;
-    margin: 20px;
-}
 
 .image {
     width: 250px;
@@ -49,7 +49,7 @@ html, body {
     padding-bottom: 10px;
     border-color: white;
 }
-
+/*intro photo and bio */
 .intro {
     background-color: rgb(82,97,107);
     text-align: center;
@@ -80,6 +80,8 @@ html, body {
     min-width: 500px;
     font-family: 'Times New Roman', Times, serif;
 }
+
+/*display images on landing page */
 .imagebody {
     background-color: rgb(82,97,107);
     text-align: center;
@@ -107,7 +109,7 @@ html, body {
 }
 
 
-
+/*navigation buttons */
 .navButtonsParent{
     display: inline-flex;
     background-color: rgb(82,97,107);
@@ -131,15 +133,13 @@ html, body {
     color: black;
 }
 
-
-
 .navMiddleBox{
     width: 70px;
     height: 100px;
     background-color:rgb(82,97,107);
 }
 
-
+/*footer for all pages */
 footer {
     background-color: black;
     margin: 0;
@@ -184,3 +184,6 @@ footer {
 
     color: white;
 }
+
+
+/*contact.html page */
