@@ -87,6 +87,7 @@ html, body {
     padding-right: 150px;
     padding-left: 150px;
     padding-top: 20px;
+    padding-bottom: 20px;
     font-family: "Arial";
     color: white
 }
@@ -104,6 +105,40 @@ html, body {
     padding-right: 25px;
     padding-left: 25px;
 }
+
+
+
+.navButtonsParent{
+    display: inline-flex;
+    background-color: rgb(82,97,107);
+    padding:20px;
+}
+.navButtons {
+    text-decoration: none;
+    font-size: 110%;
+    font-weight: 500;
+    width: 200px;
+    height: 75px;
+    border-radius: 20%;
+    border-color: black;
+    border-style: outset;
+    background-color: rgb(219, 219, 219);
+    color: grey;
+    cursor: pointer;
+}
+
+.navButtons:hover{
+    color: black;
+}
+
+
+
+.navMiddleBox{
+    width: 70px;
+    height: 100px;
+    background-color:rgb(82,97,107);
+}
+
 
 footer {
     background-color: black;
@@ -148,34 +183,4 @@ footer {
     font-size: x-large;
 
     color: white;
-}
-
-.navButtonsParent{
-    display: inline-flex;
-    background-color: rgb(82,97,107);
-}
-.navButtons {
-    text-decoration: none;
-    font-size: 110%;
-    font-weight: 500;
-    width: 200px;
-    height: 75px;
-    border-radius: 20%;
-    border-color: black;
-    border-style: outset;
-    background-color: rgb(219, 219, 219);
-    color: grey;
-    cursor: pointer;
-}
-
-.navButtons:hover{
-    color: black;
-}
-
-
-
-.navMiddleBox{
-    width: 70px;
-    height: 100px;
-    background-color:rgb(82,97,107);
 }
