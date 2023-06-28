@@ -99,8 +99,8 @@ html, body {
 
 
 .pageImage {
-    width: 410px;
-    height: 410px;
+    width: 350px;
+    height: 350px;
     padding-right: 25px;
     padding-left: 25px;
 }
@@ -156,7 +156,7 @@ footer {
 }
 .navButtons {
     text-decoration: none;
-    font-size: 100%;
+    font-size: 110%;
     font-weight: 500;
     width: 200px;
     height: 75px;
