@@ -17,6 +17,7 @@
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
                 <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="reviews.html">REVIEWS</a></li>
             </ul>
             <br>
         </nav>
@@ -29,33 +30,57 @@
             <section class="contactheader">
                 <div class="double_element">
                     <i class="fa fa-envelope" style="font-size:48px"></i>
-                    <hr class = "hrblock">
-                    <a href="mailto:ciardelk@bc.edu" class = "email">ciardelk@bc.edu</a>
+                    <hr class="hrblock">
+                    <a href="mailto:ciardelk@bc.edu" class="email">ciardelk@bc.edu</a>
                 </div>
                 <div class="double_element">
                     <i class="fa fa-phone" style="font-size:48px"></i>
-                    <hr class = "hrblock">
-                    <a href="tel:71461516101" class ="email">714-615-1601</a>
+                    <hr class="hrblock">
+                    <a href="tel:71461516101" class="email">714-615-1601</a>
                 </div>
                 <div class="double_element">
                     <i class="fa fa-map-marker" style="font-size:48px"></i>
-                    <hr class = "hrblock">
-                    <a href="https://www.google.com/maps/place/5966+Suva+St,+Cypress,+CA+90630/" class ="email" target="_blank">5966 Suva Street <br>Cypress, CA, 90630</a>
-                    
+                    <hr class="hrblock">
+                    <a href="https://www.google.com/maps/place/5966+Suva+St,+Cypress,+CA+90630/" class="email"
+                        target="_blank">5966 Suva Street <br>Cypress, CA, 90630</a>
+
                 </div>
             </section>
         </div>
         <hr>
         <div>
-            <section class = "form_and_image">
-                <div>
-                    <p>form</p>
+            <section class="form_and_image">
+                <div class = "send_left">
+                    <h2>Send Us A Message</h2>
+                    <form method="post" action="contact.php" name = "emailContact">
+                        <div>
+                            <input type="text" id="fname" name="fname" placeholder="First Name" class = "sizing">
+                        </div>
+                        <div>
+                            
+                            <input type="text" id="lname" name="lname" placeholder="Last Name" class = "sizing">
+                        </div>
+                        <div>
+                        
+                            <input type="email" id="email" name="email" placeholder="Your Email" required class = "sizing">
+                        </div>
+                        <div>
+                            
+                            <textarea id="message" name="message" placeholder="Your Message" required class = "sizingBio"></textarea>
+                        </div>
+                        <div>
+                            <input type = "submit" name="send" value = "Submit">
+                        </div>
+                    </form>
                 </div>
-                <div class = "navMiddleBox"></divclass></div>
-                <div>
-                    <img src = "Images/Kitchen.jpg" class = "contactimage">
+                <div class="navMiddleBox">
+                    </divclass>
                 </div>
-                
+                <div class = "navMiddleBox"></div>
+                <div>
+                    <img src="Images/Kitchen.jpg" class="contactimage">
+                </div>
+
             </section>
         </div>
     </section>
