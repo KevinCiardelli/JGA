@@ -165,9 +165,10 @@ footer {
     border-style: outset;
     background-color: rgb(219, 219, 219);
     color: grey;
+    cursor: pointer;
 }
 
-.navButtons a:hover{
+.navButtons:hover{
     color: black;
 }
 
