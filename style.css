@@ -93,19 +93,14 @@ body {
 /*display images on landing page */
 .imagebody {
     background-color: rgb(82, 97, 107);
-
-
-    padding-right: 150px;
-    padding-left: 150px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-family: "Arial";
-    color: white
 }
 
 .images {
     display: inline-flex;
     background-color: rgb(82, 97, 107);
+    margin-left:12.5%;
+    width: 87.5%;
+    padding:20px;
 }
 
 
@@ -123,9 +118,9 @@ body {
     display: inline-flex;
     align-items: center;
     background-color: rgb(82, 97, 107);
-    width:71%;
+    width:67%;
     padding: 20px;
-    margin-left: 29%;
+    margin-left: 33%;
     
 }
 
