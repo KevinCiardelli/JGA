@@ -93,7 +93,7 @@ body {
 /*display images on landing page */
 .imagebody {
     background-color: rgb(82, 97, 107);
-    text-align: center;
+
 
     padding-right: 150px;
     padding-left: 150px;
@@ -104,7 +104,6 @@ body {
 }
 
 .images {
-
     display: inline-flex;
     background-color: rgb(82, 97, 107);
 }
@@ -122,11 +121,16 @@ body {
 /*navigation buttons */
 .navButtonsParent {
     display: inline-flex;
+    align-items: center;
     background-color: rgb(82, 97, 107);
+    width:71%;
     padding: 20px;
+    margin-left: 29%;
+    
 }
 
 .navButtons {
+    display: inline-block;
     text-decoration: none;
     font-size: 110%;
     font-weight: 500;
@@ -271,13 +275,6 @@ footer {
 
 
 /*Home2 Documentation*/
-.home2header {
-    background-color: #f0f0f0;
-    background-color: white;
-    padding: 0px;
-    margin: 0px;
-}
-
 .Home2{
     padding: 0px;
     margin: 0px;
@@ -293,7 +290,7 @@ footer {
 
 .header{
     position: fixed;
-    z-index: 9999; /* Set a high z-index value */
+    z-index: 9999;
     top: 0;
     left: 0;
     width: 100%;
@@ -363,3 +360,239 @@ footer {
     width: 150px;
 
 }
+
+/*Gallery Page*/
+.gallery {
+    background-color: white;
+}
+
+.galleryheader {
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.9);
+    border-bottom: 1px solid #fff;
+}
+
+
+.galleryheader nav .logo {
+    padding: 22px 20px;
+    height: 80px;
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+.galleryheader nav ul {
+    list-style-type: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.galleryheader nav ul li a{
+    line-height: 80px;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.galleryheader nav ul li a:hover{
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 6px;
+
+}
+
+.head {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    font-family:cursive;
+    padding-bottom: 20px;
+}
+
+.gallerybody {
+    padding-top: 20px;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(to bottom,#888888, #ffffff);
+    padding-left: 2%;
+}
+.gallerybody2 {
+    width: 100%;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(to bottom,#ffffff, #888888);
+    padding-left: 2%;
+}
+
+.galleryentry {
+    display: inline-flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 33%;
+}
+
+.galleryimage {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    filter: drop-shadow(10px 10px 10px black);
+    cursor: pointer;
+    margin-left: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;;
+    z-index: 1;
+    opacity: 100%;
+}
+
+.galleryimage:hover{
+    filter: brightness(0.6) drop-shadow(10px 10px 10px black);
+    border-width: 80%;
+    opacity: 40%;
+}
+.overlap {
+    margin-top: -200px;
+    z-index: 9999;
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    margin-left: 17.5%;
+    text-transform: uppercase;
+    text-align: center;
+    width: 300px;
+}
+
+/*individual gallery pages*/
+.galleryPage{
+    max-height:fit-content;
+    margin:0;
+    padding: 0;
+}
+.galleryPageBody{
+    max-height: fit-content;
+    background-color: black;
+    margin:0;
+    padding: 0;
+}
+
+.galleryheaderindividual {
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.9);
+    border-bottom: 1px solid #fff;
+}
+
+
+.galleryheaderindividual nav .logo {
+    padding: 22px 20px;
+    height: 80px;
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+.galleryheaderindividual nav ul {
+    list-style-type: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.galleryheaderindividual nav ul li a{
+    line-height: 80px;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.galleryheaderindividual nav ul li a:hover{
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 6px;
+
+}
+.slideshow {
+    position: relative;
+    display: inline-block;
+    width:100%;
+  }
+  
+  .slideshow-image {
+    width: 100%;
+    height: 100vh;
+    background: url("Images/Forest.JPG");
+    background-size: cover;
+    background-position: center;
+    padding:0;
+  }
+  
+  .slideshow-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+  }
+  
+  .previous-button {
+    left: 10px;
+    height: 100x;
+    font-size: 100px;
+    font-weight: bold;
+  }
+  
+  .previous-button:hover{
+    background-color: rgba(140, 140, 140, 0.7);
+    border-radius: 20px;
+    cursor: pointer;
+    opacity: 40%;
+  }
+  .next-button {
+    right: 10px;
+    height: 100x;
+    font-size: 100px;
+    font-weight: bold;
+  }
+  .next-button:hover{
+    background-color: rgba(140, 140, 140, 0.7);
+    border-radius: 20px;
+    cursor: pointer;
+    opacity: 40%;
+  }
+
+  /*Review Page*/
+
+.reviewpage{
+    background: linear-gradient(to bottom,black, #888888);
+}
+
+  .reviewbody {
+    max-height: fit-content;
+    height: 100vh;
+    background: linear-gradient(to bottom,black, #888888);
+  }
+
+  .review {
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    margin:40px;
+  }

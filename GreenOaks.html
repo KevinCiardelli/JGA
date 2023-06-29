@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class = "galleryPage">
+<head>
+  <script>
+    var images = [
+    "Images/Front.jpg",
+      "Images/Bath.jpg",
+      "Images/LivingRoom.jpg",
+      "Images/Kitchen.jpg"
+    ];
+    
+    var currentImageIndex = 0;
+    var slideshowImage = null;
+    
+    function nextImage() {
+      if(currentImageIndex > images.size){
+        currentImageIndex = -1
+      }
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+      setTimeout(function() {
+        slideshowImage.src = images[currentImageIndex];
+        slideshowImage.classList.remove("slide");
+      }, 100); // Adjust the duration of the transition as needed (in milliseconds)
+    }
+
+    function previousImage() {
+      currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+      setTimeout(function() {
+        slideshowImage.src = images[currentImageIndex];
+        slideshowImage.classList.remove("slide");
+      }, 100); // Adjust the duration of the transition as needed (in milliseconds)
+    }
+    
+    document.addEventListener("DOMContentLoaded", function() {
+      slideshowImage = document.getElementById("slideshow-image");
+      var nextButton = document.getElementById("next-button");
+      nextButton.addEventListener("click", nextImage);
+    })
+    document.addEventListener("DOMContentLoaded", function() {
+      slideshowImage = document.getElementById("slideshow-image");
+      var nextButton = document.getElementById("previous-button");
+      nextButton.addEventListener("click", nextImage);
+    });
+  </script>
+  <title>Green Oaks</title>
+  <meta name="description" content="Gallery for JGA Construction where quality meets quantity">
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body class = "galleryPageBody">
+  <div class="galleryheaderindividual">
+    <nav>
+
+        <img src="Images/transparentlogo.jpg" class="Home2Logo">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="reviews.html">REVIEWS</a></li>
+        </ul>
+
+
+    </nav>
+</div>
+  <div id="slideshow-container"class="slideshow">
+    <img id="slideshow-image" class="slideshow-image" src = "Images/Front.jpg" alt="Slideshow Image">
+    <button id="previous-button" class="slideshow-button previous-button">&#x2039;</button>
+    <button id="next-button" class="slideshow-button next-button">&#x203A;</button>
+  </div>
+</body>
+<footer>
+
+  <div>
+      <img src="Images/InvertedLogo.jpg" class="footerimage">
+  </div>
+  <div class="footerbox"></div>
+  <div class="footertext">
+      <div class="contact">Contact</div>
+      <div class="contactinfo">
+          <p>Justin Angstadt (Owner)<br>
+              Lic#1047409<br>
+              Belmont, CA, 94002</p>
+          <div class="footerbox2"></div>
+          <p>
+              650-465-8337<br>
+              jgaconstruction24@gmail.com<br>
+          </p>
+      </div>
+
+  </div>
+  </section>
+
+</footer>
+</html>
