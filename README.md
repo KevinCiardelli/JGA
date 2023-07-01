@@ -2,4 +2,6 @@ Website For JGA Construction
 
 Made with HTML/CSS
 
-Index.html being the landing page with corresponding pages for contact and gallery
+Landing page with vertical nav menu to: about, contact, gallery, individual photos for respective galleery, and reviews
+
+CiardelliWebDesign - CWD
