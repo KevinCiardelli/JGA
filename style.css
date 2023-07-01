@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,600&display=swap');
+
 * {
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
-
-/*index.html page */
 html,
 body {
     margin: 0;
@@ -11,27 +11,158 @@ body {
     background: linear-gradient(to bottom, black, #888888);
 }
 
-/*header for all pagesrgb(255,254,242); */
+/*index.html/Home page */
 
-.image {
-    width: 200px;
-    height: 132px;
-    padding-top: 20px;
-
-    border-color: white;
+/*Background Image*/
+.homePage {
+    background-image: url("Images/bath.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
-/*intro photo and bio */
-.intro {
+/*Vertical Header*/
+.inline {
+    margin-left: -2%;
+    margin-top: -1%;
+    z-index: 9999;
+    width: 100%;
+}
+/*JGA LOGO*/
+.homelogo {
+    width: 250px;
+    height: 200px;
+    padding-bottom: 25px;
+}
+/*JGA LOGO*/
+.JGAwordingforlogo {
+    font-family: 'Barlow';;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
     text-align: center;
-    font-size: 22px;
-    padding-top: 20px;
-    padding-right: 150px;
-    padding-left: 150px;
-    font-family: "Arial";
-    color: white
+    margin-top: 3.5%;
+    height: 96.5%;
+    width: 260px;
+}
+/*Listing formatting*/
+.homePageAlignment ul li a{
+    font-family: 'Barlow';
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+}
+.homePageAlignment ul li a:hover{
+    color: rgb(188, 188, 188,0.8);
+}
+.homePageAlignment ul li {
+    display: flex;
+    margin-top: 2%;
+    height: 98%;
+    margin-left: 1%;
+    height: 60px;
 }
 
+/*Home page footer*/
+.introfooter {
+    background-color: black;
+    margin-top: 10%;
+    height: 200px;
+    color: white;
+    display: flex;
+    padding-top: 20px;
+}
+.introfooterimage {
+    width: 250px;
+    height: 165px;
+    border-color: white;
+    padding-left: 30px;
+    padding-top: 5px;
+}
+
+.introfootertext {
+    color: white;
+    text-align: left;
+    line-height: 1.3;
+    padding-top: 20px;
+}
+
+.introfooterbox {
+    width: 80px;
+    height: 135px;
+    background-color: black;
+}
+
+.introfooterbox2 {
+    width: 60px;
+    height: 100px;
+    background-color: black;
+}
+.introcontactinfo {
+    font-size: large;
+    color: white;
+    display: flex;
+}
+
+/*About Page*/
+/*Header for all pages*/
+
+.header {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, .9);
+    border-bottom: 1px solid #fff;
+}
+
+.Home2Logo {
+    width: 150px;
+
+}
+
+.Home2Body nav ul {
+    list-style-type: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.Home2Body nav ul li a {
+    line-height: 80px;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Home2Body nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 6px;
+
+}
+
+/* ABout Us Background Picture*/
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("Images/Forest.JPG");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5);
+}
+/*ABout us Body*/
 .introbody {
     padding: 50px;
     display: flex;
@@ -40,31 +171,34 @@ body {
     background-color: rgb(82, 97, 107);
 }
 
+
+
+/*About us Body Formatting*/
+.Home2Body section {
+    width: 100%;
+    height: 100vh;
+}
+
 .FrontImage {
     width: 375px;
     height: 333px;
     padding-right: 50px;
     filter: drop-shadow(10px 10px 10px black);
 }
-
-.introparagraph {
-    line-height: 1.5;
-    min-width: 500px;
-    font-family: 'Times New Roman', Times, serif;
+.introparagraph2 {
+    position: absolute;
+    line-height: 2.0;
+    min-width: 450px;
+    font-family: 'Barlow';
     text-align: left;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    padding-right: 20px;
+    margin-top: -10%;
+    margin-right: 10%
 }
-
-/*display images on landing page */
-
-
-.pageImage {
-    width: 350px;
-    height: 350px;
-    padding-right: 25px;
-    padding-left: 25px;
-    filter: drop-shadow(10px 10px 10px black);
-}
-
 /*footer for all pages */
 footer {
     background-color: black;
@@ -108,17 +242,21 @@ footer {
     display: flex;
 }
 
-.contact {
-    font-size: x-large;
 
-    color: white;
-}
-
-
-/*contact.html page */
+/*Contact Page*/
 .contactheader {
     display: inline-flex;
     padding-bottom: 20px;
+}
+/*Contact Body*/
+.intro {
+    text-align: center;
+    font-size: 22px;
+    padding-top: 20px;
+    padding-right: 150px;
+    padding-left: 150px;
+    font-family: 'Barlow';
+    color: white
 }
 
 .double_element {
@@ -184,107 +322,7 @@ footer {
     text-align: left;
 }
 
-
-/*Home2 Documentation*/
-.Home2 {
-    padding: 0px;
-    margin: 0px;
-    background-color: white;
-}
-
-
-.Home2Body {
-    margin: 0px;
-    padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.header {
-    position: fixed;
-    z-index: 9999;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    padding: 10px 90px;
-    box-sizing: border-box;
-    background: rgba(0, 0, 0, .9);
-    border-bottom: 1px solid #fff;
-}
-
-
-
-.Home2Body nav .logo {
-    padding: 22px 20px;
-    height: 80px;
-    float: left;
-    font-size: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #fff;
-}
-
-
-.Home2Body nav ul {
-    list-style-type: none;
-    float: right;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.Home2Body nav ul li a {
-    line-height: 80px;
-    color: #fff;
-    padding: 12px 30px;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.Home2Body nav ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 6px;
-
-}
-
-.Home2Body section {
-    width: 100%;
-    height: 100vh;
-}
-
-.Home2Body .background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url("Images/Forest.JPG");
-    background-size: cover;
-    background-position: center;
-    filter: brightness(0.5);
-    /* Adjust the value between 0 and 1 */
-}
-
-.introparagraph2 {
-    position: absolute;
-    line-height: 2.0;
-    min-width: 450px;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: left;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-    padding-right: 20px;
-    margin-top: -5%;
-    margin-right: 10%
-}
-
-.Home2Logo {
-    width: 150px;
-
-}
+/*Gallery page*/
 
 /*Gallery Page*/
 .gallery {
@@ -340,7 +378,7 @@ footer {
     font-size: 32px;
     font-weight: bold;
     color: black;
-    font-family: cursive;
+    font-family: 'Barlow';
     padding-bottom: 20px;
 }
 
@@ -398,6 +436,7 @@ footer {
     text-align: center;
     width: 300px;
 }
+/*gallery selection*/
 
 /*individual gallery pages*/
 .galleryPage {
@@ -508,9 +547,7 @@ footer {
     cursor: pointer;
     opacity: 70%;
 }
-
-/*Review Page*/
-
+/*Testimonial page*/
 .reviewpage {
     background: linear-gradient(to bottom, black, #888888);
 }
@@ -523,7 +560,7 @@ footer {
 
 .review {
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Barlow';
     color: white;
     margin: 30px;
 }
