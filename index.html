@@ -1,28 +1,51 @@
 <!DOCTYPE html>
-<html class = "homePage">
+<html id="homePage">
 
 <head>
     <title>Home</title>
     <meta name="description" content="Gallery for JGA Construction where quality meets quantity">
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" , user-scalable="no" />
+
+    <style>
+        #homePage {
+            transition: background-image 0.5s ease;
+        }
+    </style>
+
+    <script>
+        const images = ['Images/Livingroom.jpg', 'Images/bath.jpg', 'Images/Kitchen.jpg']; /* Array of image URLs */
+        const backgroundElement = document.getElementById('homePage');
+        let currentIndex = 0;
+
+        function changeBackgroundImage() {
+            backgroundElement.style.opacity = 0; // Fade out the current image
+                backgroundElement.style.backgroundImage = `url('${images[currentIndex]}')`;
+                currentIndex = (currentIndex + 1) % images.length; // Increment index, wrap around if needed
+                backgroundElement.style.opacity = 1; // Fade in the new image
+         // Wait for the fade out transition to complete (0.5s)
+
+        }
+
+        setInterval(changeBackgroundImage, 4000);
+    </script>
 </head>
-<body class="homePage">
 
-    <div class = "homePageAlignment">
-            <ul>
-                <li><img src = "Images/trans.png" class = "homelogo"></li>
-                <div class = "JGAwordingforlogo">JGA Construction</div>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-                <li><a href="gallery.html">GALLERY</a></li>
-                <li><a href="reviews.html">TESTIMONIALS</a></li>
-            </ul>
+<body class="homeBody">
+
+    <div class="homePageAlignment">
+        <ul>
+            <li><img src="Images/trans.png" class="homelogo"></li>
+            <div class="JGAwordingforlogo">JGA Construction</div>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="reviews.html">TESTIMONIALS</a></li>
+        </ul>
     </div>
-</body>
 
-    <footer class = "introfooter">
+    <footer class="introfooter">
 
         <div>
             <img src="Images/InvertedLogo.jpg" class="introfooterimage">
@@ -32,17 +55,17 @@
             <div class="introcontactinfo">
                 <p>Justin Angstadt (Owner)<br>
                     Lic#1047409<br>
-                    Belmont, CA, 94002</p>
+                    Redwood City, CA, 94061</p>
                 <div class="introfooterbox2"></div>
                 <p>
                     650-465-8337<br>
                     jgaconstruction24@gmail.com<br>
                 </p>
             </div>
-    
+
         </div>
-        </section>
-    
     </footer>
+
+</body>
 
 </html>
