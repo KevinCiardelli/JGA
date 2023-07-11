@@ -601,8 +601,11 @@ footer {
 }
 
 
-@media screen and (max-width: 200px){
+@media screen and (max-width: 400px){
+    body{
+        background-color: green;
+    }
     .homePageAlignment ul li a{
-        color: white;
+        color: red;
     }
 }
