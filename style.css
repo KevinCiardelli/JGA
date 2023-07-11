@@ -19,26 +19,6 @@ body{
 
 /*index.html/Home page */
 
-/*Background Image*/
-.homePage {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    background-size: cover;
-    background-position: center;
-    filter: brightness(0.5);
-}
-
-/*Vertical Header*/
-.inline {
-    margin-left: -2%;
-    margin-top: -1%;
-    z-index: 9999;
-    width: 100%;
-}
 /*JGA LOGO*/
 .homelogo {
     width: 250px;
@@ -189,6 +169,7 @@ body{
 .Home2Body section {
     width: 100%;
     height: 100vh;
+    background-color: black;
 }
 
 .FrontImage {
@@ -599,13 +580,70 @@ footer {
     border-radius: 20px;
     border-color: white;
 }
-
-
-@media screen and (max-width: 500px){
-    body{
-        background-color: green;
+@media screen and (max-width: 500px) {
+    html {
+        margin: 0;
+        padding: 0;
+        background-image: url("Images/Front.jpg");
+        max-height: 100vh;
+        width: 100%;
     }
-    .homePageAlignment ul li a{
-        color: red;
+    body {
+
+    }
+    .homePageAlignment{
+
+        align-items: center;
+    }
+
+    .homePageAlignment ul li{
+
+        align-items: center;
+        
+    }
+    .homePageAlignment ul li a {
+        font-family: 'Barlow';
+        font-size: 30px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: left;
+        margin-top: 10px;
+        margin-left: 20%;
+    }
+
+    .introfooter {
+        background-color: black;
+        height: 120px;
+        color: white;
+        display: flex;
+    }
+    .introfooterimage {
+        width: 135px;
+        height: 75px;
+        border-color: white;
+    }
+    
+    .introfootertext {
+        color: white;
+        text-align: left;
+        line-height: 1.0;
+    }
+    
+    .introfooterbox {
+        width: 10px;
+        height: 100px;
+        background-color: black;
+    }
+    
+    .introfooterbox2 {
+        width: 10px;
+        height: 10px;
+        background-color: black;
+    }
+    .introcontactinfo {
+        font-size: 10px;
+        color: white;
+        display: flex;
     }
 }
