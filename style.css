@@ -50,7 +50,7 @@ body{
     font-family: 'Barlow';;
     font-size: 30px;
     font-weight: bold;
-    color: green;
+    color: rgb(255, 255, 255);
     text-align: center;
     margin-top: 3.5%;
     height: 96.5%;
@@ -60,7 +60,7 @@ body{
 .homePageAlignment ul li a{
     font-family: 'Barlow';
     font-size: 30px;
-    color: red;
+    color: white;
     text-decoration: none;
     font-weight: bold;
     text-align: center;
@@ -602,11 +602,6 @@ footer {
 
 
 @media screen and (max-width: 600px){
-    body {
-        margin: 0;
-        padding: 0;
-        background-color: red;
-    }
     .homePageAlignment ul li a{
         color: white;
     }
