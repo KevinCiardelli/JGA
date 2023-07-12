@@ -612,32 +612,31 @@ footer {
         width: 100%;
     }
     body {
-
+        display: block;
     }
     .homelogo {
-        padding-top: 12%;
-        margin-left: 6%;
+        margin-left: 12%;
         width: 250px;
         height: 200px;
         padding-bottom: 25px;
         padding-top: 25px;
+        margin-top: 20%;
     }
     /*JGA LOGO*/
     .JGAwordingforlogo {
-        font-family: 'Barlow';;
+        font-family: 'Barlow';
         font-size: 30px;
         font-weight: bold;
-        color: green;
+        color: white;
         text-align: center;
         margin-top: 3.5%;
-        margin-left: 3%;
+        margin-left: 11%;
         height: 96.5%;
         width: 260px;
         padding-top: 20px;
     }
     .homePageAlignment{
-
-        align-items: center;
+        align-content: center;
     }
 
     .homePageAlignment ul li{
@@ -653,7 +652,10 @@ footer {
         font-weight: bold;
         text-align: left;
         margin-top: 10px;
-        margin-left: 20%;
+        margin-left: -22%;
+        align-items: center;
+        text-align: center;
+        width: 210%;
     }
 
     .introfooter {
