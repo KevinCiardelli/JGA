@@ -614,23 +614,25 @@ footer {
 
     }
     .homelogo {
-        padding-top: 10%;
+        padding-top: 12%;
         margin-left: 6%;
         width: 250px;
         height: 200px;
         padding-bottom: 25px;
+        padding-top: 25px;
     }
     /*JGA LOGO*/
     .JGAwordingforlogo {
         font-family: 'Barlow';;
         font-size: 30px;
         font-weight: bold;
-        color: red;
+        color: green;
         text-align: center;
         margin-top: 3.5%;
         margin-left: 3%;
         height: 96.5%;
         width: 260px;
+        padding-top: 20px;
     }
     .homePageAlignment{
 
