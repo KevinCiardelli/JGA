@@ -19,6 +19,26 @@ body{
 
 /*index.html/Home page */
 
+/*Background Image*/
+.homePage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    background-position: center;
+
+}
+
+/*Vertical Header*/
+.inline {
+    margin-left: -2%;
+    margin-top: -1%;
+    z-index: 9999;
+    width: 100%;
+}
 /*JGA LOGO*/
 .homelogo {
     width: 250px;
@@ -160,7 +180,7 @@ body{
     display: flex;
     text-align: center;
     align-items: center;
-    background-color: rgb(82, 97, 107);
+    background-color: black);
 }
 
 
@@ -169,7 +189,6 @@ body{
 .Home2Body section {
     width: 100%;
     height: 100vh;
-    background-color: black;
 }
 
 .FrontImage {
@@ -580,6 +599,8 @@ footer {
     border-radius: 20px;
     border-color: white;
 }
+
+
 @media screen and (max-width: 500px) {
     html {
         margin: 0;
@@ -590,6 +611,25 @@ footer {
     }
     body {
 
+    }
+    .homelogo {
+        padding-top: 10%;
+        margin-left: 6%;
+        width: 250px;
+        height: 200px;
+        padding-bottom: 25px;
+    }
+    /*JGA LOGO*/
+    .JGAwordingforlogo {
+        font-family: 'Barlow';;
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        margin-top: 3.5%;
+        margin-left: 3%;
+        height: 96.5%;
+        width: 260px;
     }
     .homePageAlignment{
 
@@ -613,6 +653,8 @@ footer {
     }
 
     .introfooter {
+        margin-top: 30%;
+        height: 70%;
         background-color: black;
         height: 120px;
         color: white;
