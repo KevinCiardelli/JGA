@@ -1004,4 +1004,29 @@ footer {
         border-color: white;
     }
 
+
+    .gallerybody {
+        padding-top: 20px;
+        align-items: center;
+        width: 100%;
+        background: linear-gradient(to bottom, #888888, #ffffff);
+        padding-left: 2%;
+    }
+    
+    .gallerybody2 {
+        width: 100%;
+        align-items: center;
+        width: 100%;
+        background: linear-gradient(to bottom, #ffffff, #888888);
+        padding-left: 2%;
+    }
+    
+    .galleryentry {
+        display: inline;
+        padding-bottom: 20px;
+        align-items: center;
+        box-sizing: border-box;
+        width: 33%;
+    }
+
 }
