@@ -769,8 +769,8 @@ footer {
         position: absolute;
         top: 0;
         left: 0;
-        width: 110%;
-        height: 105%;
+        width: 120%;
+        height: 102%;
         background: url("Images/Forest.JPG");
         background-size: cover;
         background-position: center;
@@ -810,7 +810,7 @@ footer {
         line-height: 2.0;
         font-family: 'Barlow';
         text-align: left;
-        color: red;
+        color: green;
         font-weight: bold;
         font-size: 10px;
         text-align: center;
@@ -823,7 +823,7 @@ footer {
     footer {
         margin-top: 30%;
         height: 70%;
-        width: 105%;
+        width: 120%;
         background-color: black;
         height: 120px;
         color: white;
