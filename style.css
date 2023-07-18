@@ -262,7 +262,7 @@ footer {
 
 /*Contact Page*/
 .contactbody {
-    background: linear-gradient(to bottom, black, #3b3b3b);
+    background: linear-gradient(to bottom, black, rgb(115, 115, 115));
 }
 
 .contactheader {
@@ -863,6 +863,7 @@ footer {
     /*contact page*/
     .contactbody {
         background: linear-gradient(to bottom, black, black);
+        margin-left: 10%;
     }
 
     .contactheader {
