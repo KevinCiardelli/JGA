@@ -770,7 +770,7 @@ footer {
         top: 0;
         left: 0;
         width: 110%;
-        height: 125%;
+        height: 105%;
         background: url("Images/Forest.JPG");
         background-size: cover;
         background-position: center;
@@ -823,7 +823,7 @@ footer {
     footer {
         margin-top: 30%;
         height: 70%;
-        width: 110%;
+        width: 105%;
         background-color: black;
         height: 120px;
         color: white;
