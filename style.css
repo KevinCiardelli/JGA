@@ -626,7 +626,7 @@ footer {
     html {
         margin: 0;
         padding: 0;
-        background-image: url("Images/Front.jpg");
+        background-color:black;
 
     }
 
@@ -862,7 +862,6 @@ footer {
     /*contact page*/
     .contactbody {
         background: linear-gradient(to bottom, black, black);
-        margin-left: 10%;
     }
 
     .contactheader {
