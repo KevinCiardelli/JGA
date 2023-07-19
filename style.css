@@ -602,8 +602,6 @@ footer {
 }
 
 .reviewbody {
-    max-height: fit-content;
-    height: 100vh;
     background: linear-gradient(to bottom, black, #3b3b3b);
 }
 
@@ -976,9 +974,8 @@ footer {
     }
 
     .reviewbody {
-        max-height: fit-content;
-        height: 100%;
-        background: linear-gradient(to bottom, black, #3b3b3b);
+        background: linear-gradient(to bottom, black, #454545);
+        height:150%;
     }
 
     .review {
