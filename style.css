@@ -766,8 +766,8 @@ footer {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 102%;
+        width: 102%;
+        height: 100%;
         background: url("Images/Forest.JPG");
         background-size: cover;
         background-position: center;
@@ -800,6 +800,7 @@ footer {
         height: 333px;
         padding-right: 50px;
         filter: drop-shadow(10px 10px 10px black);
+        margin-left: 5%;
     }
 
     .introparagraph2 {
@@ -807,7 +808,7 @@ footer {
         line-height: 2.0;
         font-family: 'Barlow';
         text-align: left;
-        color: green;
+        color: white;
         font-weight: bold;
         font-size: 8px;
         text-align: center;
