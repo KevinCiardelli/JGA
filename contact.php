@@ -1,29 +1,31 @@
 <?php
-error_reporting(E_ALL);
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  // Collect form data
-  $fname = $_POST['fname'];
-  $lname = $_POST['lname'];
-  $email = $_POST['email'];
-  $message = $_POST['message'];
+require 'vendor/autoload.php';
 
-  // Set up email parameters
-  $to = "ciardelk@bc.edu"; // Replace with the recipient's email address
-  $subject = "New form submission";
-  $body = "First Name: " . $fname . "\n";
-  $body .= "Last Name: " . $lname . "\n";
-  $body .= "Email: " . $email . "\n";
-  $body .= "Message: " . $message;
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-  // Set up additional headers
-  $headers = "From: " . $email . "\r\n";
-  $headers .= "Reply-To: " . $email . "\r\n";
+$mail = new PHPMailer(true);
+phpinfo();
+try {
+    // SMTP settings
+    $mail->isSMTP();
+    $mail->SMTPAuth = true;
+    $mail->Host = 'smtp.gmail.com';
+    $mail->SMTPSecure = 'ssl'; // Use 'ssl' if you have SSL enabled
+    $mail->Port = 465; // Use 465 for 'ssl'
 
-  // Send the email
-  if (mail($to, $subject, $body, $headers)) {
-    echo "Email sent successfully!";
-  } else {
-    echo "Failed to send email.";
-  }
+    // Gmail account credentials
+    $mail->Username = 'kevinciardelli02@gmail.com';
+    $mail->Password = 'pwycqkhthtandfyj'; // Use your app password if enabled, else use your Gmail account password
+
+    // Email content
+    $mail->setFrom($email, $name);
+    $mail->addAddress('ciardelk@bc.edu', 'kevin');
+    $mail->Subject = 'Inquiry';
+    $mail->Body = $message;
+
+    $mail->send();
+    echo 'Email sent successfully!';
+} catch (Exception $e) {
+    echo 'Error: ' . $mail->ErrorInfo;
 }
-?>
