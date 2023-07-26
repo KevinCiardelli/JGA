@@ -35,10 +35,10 @@
         let currentIndex = 0;
 
         function changeBackgroundImage() {
-            backgroundElement.style.opacity = 0; // Fade out the current image
+            
             backgroundElement.style.backgroundImage = `url('${images[currentIndex]}')`;
             currentIndex = (currentIndex + 1) % images.length; // Increment index, wrap around if needed
-            backgroundElement.style.opacity = 1; // Fade in the new image
+            
 
         }
 
