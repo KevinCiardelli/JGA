@@ -386,8 +386,9 @@ footer {
     height: 100px;
     padding: 10px 90px;
     box-sizing: border-box;
-    background: rgba(0, 0, 0, .05);
+    background: rgba(0, 0, 0, 1);
     border-bottom: 1px solid #fff;
+    
 }
 
 
@@ -399,7 +400,9 @@ footer {
     font-weight: bold;
     text-transform: uppercase;
     color: #fff;
+    
 }
+
 
 
 .galleryheader nav ul {
