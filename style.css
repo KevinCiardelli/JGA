@@ -911,6 +911,7 @@ footer {
         padding: 0;
         display: inline-flex;
         width: 400px;
+       margin-right: -25%;
     }
 
     .galleryheader nav ul li a {
@@ -920,7 +921,8 @@ footer {
         text-decoration: none;
         font-size: 8px;
         font-weight: bold;
-        margin-left: 80%;
+       
+        
     }
 
     .galleryheader nav ul li a:hover {
