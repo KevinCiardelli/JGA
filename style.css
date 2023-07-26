@@ -556,12 +556,12 @@ footer {
 }
 
 .slideshow-image {
-    width: 60%;
+    width: 40%;
     height: 80vh;
     background-size: cover;
     background-position: center;
     padding: 0;
-    margin-left: 20%;
+    margin-left: 29%;
     margin-top: 3%;
     filter: drop-shadow(10px 10px 10px black);
     padding-bottom: 40px;
@@ -572,7 +572,7 @@ footer {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    margin-right: 200px;
+    margin-right: 350px;
     background-color: transparent;
     border: none;
     color: white;
@@ -581,7 +581,7 @@ footer {
 
 .previous-button {
     
-    left: 200px;
+    left: 325px;
     height: 100x;
     font-size: 100px;
     font-weight: bold;
