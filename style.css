@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,600&display=swap');
-
+@import url('https://db.onlinewebfonts.com/c/dc52446fb8e9f8279b8d6be41d9fd08d?family=Bourbon+W00+Lines');
 * {
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
@@ -18,7 +18,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: url("Images/Front.jpg");
+    background: url("Images/Home/5.jpg");
     background-size: cover;
     background-position: center;
     flex-direction: column;
@@ -41,9 +41,8 @@ body {
 
 /*JGA LOGO*/
 .JGAwordingforlogo {
-    font-family: 'Barlow';
-    ;
-    font-size: 30px;
+    font-family: "Bourbon W00 Lines";
+    font-size: 40px;
     font-weight: bold;
     color: rgb(255, 255, 255);
     text-align: center;
@@ -51,18 +50,24 @@ body {
     height: 96.5%;
     width: 260px;
     padding-top: 20px;
+    position: relative; /* Ensure the pseudo-element is positioned relative to this element */
 }
 
 /*Listing formatting*/
 .homePageAlignment ul li a {
-    font-family: 'Barlow';
-    font-size: 30px;
+    font-family: "Bourbon W00 Lines";
+    font-size: 40px;
     color: white;
     text-decoration: none;
     font-weight: bold;
     text-align: center;
     margin-top: 30px;
+  
+    letter-spacing: 2px;
+    position: relative; /* Ensure the pseudo-element is positioned relative to this element */
 }
+
+
 
 .homePageAlignment ul li a:hover {
     color: rgb(188, 188, 188, 0.8);
@@ -495,7 +500,7 @@ footer {
 
 .galleryPageBody {
     max-height: fit-content;
-    background-color: black;
+    background: linear-gradient(to bottom, rgb(89, 48, 1), #ffffff);
     margin: 0;
     padding: 0;
 }
@@ -551,17 +556,23 @@ footer {
 }
 
 .slideshow-image {
-    width: 100%;
-    height: 100vh;
+    width: 60%;
+    height: 80vh;
     background-size: cover;
     background-position: center;
     padding: 0;
+    margin-left: 20%;
+    margin-top: 3%;
+    filter: drop-shadow(10px 10px 10px black);
+    padding-bottom: 40px;
+
 }
 
 .slideshow-button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    margin-right: 200px;
     background-color: transparent;
     border: none;
     color: white;
@@ -569,14 +580,15 @@ footer {
 }
 
 .previous-button {
-    left: 10px;
+    
+    left: 200px;
     height: 100x;
     font-size: 100px;
     font-weight: bold;
 }
 
 .previous-button:hover {
-    color: rgba(0, 0, 0, 0.7);
+    color: rgba(131, 131, 131, 0.7);
 
     cursor: pointer;
     opacity: 40%;
@@ -590,7 +602,7 @@ footer {
 }
 
 .next-button:hover {
-    color: rgba(0, 0, 0, 0.7);
+    color: rgba(131, 131, 131, 0.7);
 
     cursor: pointer;
     opacity: 70%;
