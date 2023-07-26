@@ -1028,8 +1028,10 @@ footer {
     }
     
     .galleryentry {
-        display: inline;
+        display:inline-table;
         padding-bottom: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
         align-items: center;
         box-sizing: border-box;
         width: 33%;
