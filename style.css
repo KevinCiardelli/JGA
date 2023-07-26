@@ -917,6 +917,7 @@ footer {
         text-decoration: none;
         font-size: 8px;
         font-weight: bold;
+        margin-left: 40%;
     }
 
     .galleryheader nav ul li a:hover {
