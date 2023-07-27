@@ -490,7 +490,8 @@ footer {
 }
 
 .gallerybody {
-    padding-top: 20px;
+    
+    padding-top: 100px;
     align-items: center;
     width: 100%;
     background: linear-gradient(to bottom, #888888, #ffffff);
@@ -498,6 +499,7 @@ footer {
 }
 
 .gallerybody2 {
+    
     width: 100%;
     align-items: center;
     width: 100%;
@@ -506,6 +508,7 @@ footer {
 }
 
 .galleryentry {
+    
     display: inline-flex;
     align-items: center;
     box-sizing: border-box;
