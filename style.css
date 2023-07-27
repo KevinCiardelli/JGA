@@ -1092,7 +1092,7 @@ footer {
         color: white;
         font-size: 20px;
         font-weight: bold;
-        margin-left: 0%;
+        margin-left: -60%;
     }
     .insta {
         text-decoration: none;
@@ -1100,7 +1100,7 @@ footer {
         color: white;
         font-size: 20px;
         font-weight: bold;
-        margin-left: -30%;
+        margin-left: -60%;
     }
 
     .double_element {
