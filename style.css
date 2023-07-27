@@ -1012,7 +1012,7 @@ footer {
     .galleryheader nav .logo {
         z-index: 9999;
         width: 150px;
-        margin-left: 30%;
+        margin-left: 40%;
     }
 
 
@@ -1052,6 +1052,7 @@ footer {
     }
 
     .intro {
+        margin-top: 30%;
         height: 100%;
         text-align: center;
         font-size: 18px;
@@ -1128,6 +1129,7 @@ footer {
 
 
     .gallerybody {
+        margin-top: 30%;
         padding-top: 20px;
         align-items: center;
         width: 100%;
