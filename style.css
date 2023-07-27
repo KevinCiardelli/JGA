@@ -359,7 +359,6 @@ footer {
 .email {
     text-decoration: none;
     color: white;
-
     display: flex;
     font-size: 20px;
     width: 100%;
@@ -368,9 +367,13 @@ footer {
     font-weight: bold;
 }
 .insta {
-    display: inline;
+    text-decoration: none;
     color: white;
+    display: flex;
     font-size: 20px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     font-weight: bold;
 }
 
@@ -1092,6 +1095,7 @@ footer {
         margin-left: 0%;
     }
     .insta {
+        text-decoration: none;
         display: inline;
         color: white;
         font-size: 20px;
