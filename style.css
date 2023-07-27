@@ -693,20 +693,33 @@ footer {
         background-color:black;
 
     }
+    .home {
+        background-color: white;
+        display: contents;
+    }
 
 
     .slideshow-container {
+        min-height: auto;
         position: relative;
         text-align: center;
         z-index: 1; /* Put the slideshow above other content */
     }
 
+  
+
+    .slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
     .slide img {
-        display: none;
-        
-        height: 100vh;
-        object-fit: contain; /* Ensure the entire image is visible without cropping (zoom out) */
-        animation: fade 2s ease; /* Use the fade animation with 2 seconds duration and ease timing function */
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* This will make the image cover the entire slide */
     }
 
     .container {

@@ -22,7 +22,7 @@
     </style>
 </head>
 
-<body>
+<body class = home>
     <div class="slideshow-container">
         <div class="slide">
             <img src="Images/Home/7.jpg" alt="Image 2">
@@ -39,21 +39,39 @@
         <div class="slide">
             <img src="Images/Home/4.jpg" alt="Image 6">
         </div>
-    </div>
-    <div class="container">
-        <div class="homePageAlignment">
-
-            <ul>
-                <li><img src="Images/trans.png" class="homelogo"></li>
-                <div class="JGAwordingforlogo">JGA Construction</div>
-                <li><a href="/">> HOME</a></li>
-                <li><a href="/about">> ABOUT</a></li>
-                <li><a href="/contact">> CONTACT</a></li>
-                <li><a href="/gallery">> GALLERY</a></li>
-                <!--<li><a href="reviews.html">TESTIMONIALS</a></li>-->
-            </ul>
+        <div class="container">
+            <div class="homePageAlignment">
+    
+                <ul>
+                    <li><img src="Images/trans.png" class="homelogo"></li>
+                    <div class="JGAwordingforlogo">JGA Construction</div>
+                    <li><a href="/">> HOME</a></li>
+                    <li><a href="/about">> ABOUT</a></li>
+                    <li><a href="/contact">> CONTACT</a></li>
+                    <li><a href="/gallery">> GALLERY</a></li>
+                    <!--<li><a href="reviews.html">TESTIMONIALS</a></li>-->
+                </ul>
+            </div>
         </div>
     </div>
+    <footer class="footer">
+        <div>
+            <img src="Images/InvertedLogo.jpg" class="footerimage">
+        </div>
+        <div class="footerbox"></div>
+        <div class="footertext">
+            <div class="contactinfo">
+                <p>Justin Angstadt (Owner)<br>
+                    Lic#1047409<br>
+                    Redwood City, CA, 94061</p>
+                <div class="footerbox2"></div>
+                <p>
+                    650-465-8337<br>
+                    jgaconstruction24@gmail.com<br>
+                </p>
+            </div>
+        </div>
+    </footer>
 
     <script>
         let slideIndex = 0;
@@ -65,7 +83,7 @@
             }
             slideIndex = (slideIndex + 1) % slides.length;
             slides[slideIndex].style.display = "block";
-            setTimeout(showSlide, 4000); 
+            setTimeout(showSlide, 5000); 
         }
 
         showSlide();
