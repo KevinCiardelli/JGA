@@ -769,7 +769,7 @@ footer {
 
     /*JGA LOGO*/
     .JGAwordingforlogo {
-        font-family: 'Barlow';
+        font-family: "Bourbon W00 Lines";
         font-size: 30px;
         font-weight: bold;
         color: white;
@@ -792,7 +792,7 @@ footer {
     }
 
     .homePageAlignment ul li a {
-        font-family: 'Barlow';
+        font-family: "Bourbon W00 Lines";
         font-size: 30px;
         color: white;
         text-decoration: none;
