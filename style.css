@@ -1110,7 +1110,7 @@ footer {
         border-radius: 10px;
         filter: drop-shadow(10px 10px 10px black);
         cursor: pointer;
-        margin-left: 0%;
+        margin-left: 10%;
         padding-top: 20px;
         padding-bottom: 20px;
         
@@ -1150,7 +1150,7 @@ footer {
 
 
     .gallerybody {
-        margin-top: 20%;
+        margin-top: 25%;
         padding-top: 20px;
         align-items: center;
         width: 100%;
