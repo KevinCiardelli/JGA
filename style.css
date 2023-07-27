@@ -769,7 +769,7 @@ footer {
 
     /*JGA LOGO*/
     .JGAwordingforlogo {
-        font-family: "Bourbon W00 Lines";
+        font-family: 'Barlow';
         font-size: 30px;
         font-weight: bold;
         color: white;
@@ -792,7 +792,7 @@ footer {
     }
 
     .homePageAlignment ul li a {
-        font-family: "Bourbon W00 Lines";
+        font-family: 'Barlow';
         font-size: 30px;
         color: white;
         text-decoration: none;
@@ -1006,13 +1006,14 @@ footer {
         box-sizing: border-box;
         background: rgba(0, 0, 0, .9);
         border-bottom: 1px solid #fff;
+        
     }
 
 
     .galleryheader nav .logo {
         z-index: 9999;
         width: 150px;
-        margin-left: 40%;
+        
     }
 
 
@@ -1023,7 +1024,7 @@ footer {
         padding: 0;
         display: inline-flex;
         width: 400px;
-       margin-right: -25%;
+       margin-right: -45%;
     }
 
     .galleryheader nav ul li a {
@@ -1103,6 +1104,26 @@ footer {
         margin-left: -18%;
     }
 
+    .galleryimage {
+        width: 350px;
+        height: 350px;
+        border-radius: 10px;
+        filter: drop-shadow(10px 10px 10px black);
+        cursor: pointer;
+        margin-left: 0%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+        z-index: 1;
+        opacity: 100%;
+    }
+    
+    .galleryimage:hover {
+        filter: brightness(0.6) drop-shadow(10px 10px 10px black);
+        border-width: 80%;
+        opacity: 40%;
+    }
+
     /*Testimonial page*/
     .reviewpage {
         background: linear-gradient(to bottom, black, #888888);
@@ -1129,7 +1150,7 @@ footer {
 
 
     .gallerybody {
-        margin-top: 30%;
+        margin-top: 20%;
         padding-top: 20px;
         align-items: center;
         width: 100%;
