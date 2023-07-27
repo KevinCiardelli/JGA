@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="homePage" class="homePage">
+<html>
 
 <head>
     <title>Home</title>
@@ -7,72 +7,86 @@
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1", user-scalable="no" />
 
+    <title>Slideshow</title>
     <style>
-        #homePage {
-            transition: background-image 0.05s ease;
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden; /* Hide any overflowing content */
+            color: white; /* Set all text to white */
         }
 
-        html, body {
+        .slideshow-container {
+            position: relative;
+            width: 100vw; /* Full viewport width */
+            height: 100vh; /* Full viewport height */
+            text-align: center;
+            z-index: 1; /* Put the slideshow above other content */
+        }
+
+        .slide img {
+            margin-top: -12%;
+            display: none;
+            width: 100%;
             height: 100%;
-            margin: 0;
+            object-fit: contain; /* Ensure the entire image is visible without cropping (zoom out) */
+            animation: fade 2s ease; /* Use the fade animation with 2 seconds duration and ease timing function */
         }
 
         .container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%; /* Set the width of the container (adjust as needed) */
+            height: 100%;
             display: flex;
+            justify-content: center;
+            align-items: center;
             flex-direction: column;
-            min-height: 100vh;
-
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            z-index: 2; /* Put the container above the slideshow */
+            text-decoration: none;
+           
+            margin-left: -15%;
+            margin-top: -7%;
         }
 
-        .introfooter {
-            margin-top: auto;
+        @keyframes fade {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
-        @keyframes slide{
-    0%{
-        transform: translateX(0);
-    }
-    25%{
-        transform: translateX(0);
-    }
-    30%{
-        transform: translateX(-100%);
-    }
-    50%{
-        transform: translateX(-100%);
-    }
-    55%{
-        transform: translateX(-200%);
-    }
-    75%{
-        transform: translateX(-200%);
-    }
-    80%{
-        transform: translateX(-300%);
-    }
-    100%{
-        transform: translateX(-300%);
-    }
-}
+
     </style>
-
-    <script>
-        const images = ['Images/Home/7.jpg','Images/Home/1.jpg','Images/Home/2.jpg', 'Images/Home/3.jpg','Images/Home/4.jpg', 'Images/Home/5.jpg']; /* Array of image URLs */
-        const backgroundElement = document.getElementById('homePage');
-        let currentIndex = 0;
-
-        function changeBackgroundImage() {
-            backgroundElement.style.opacity = .5; // Fade out the current image
-            backgroundElement.style.backgroundImage = `url('${images[currentIndex]}')`;
-            currentIndex = (currentIndex + 1) % images.length; // Increment index, wrap around if needed
-            backgroundElement.style.opacity = 1; // Fade in the new image
-
-        }
-
-        setInterval(changeBackgroundImage, 4000);
-    </script>
 </head>
 
 <body>
+    <div class="slideshow-container">
+        <div class="slide">
+            <img src="Images/Home/7.jpg" alt="Image 2">
+        </div>
+        <div class="slide">
+            <img src="Images/Home/5.jpg" alt="Image 1">
+        </div>
+        <div class="slide">
+            <img src="Images/Home/1.jpg" alt="Image 3">
+        </div>
+        <div class="slide">
+            <img src="Images/Home/3.jpg" alt="Image 5">
+        </div>
+        <div class="slide">
+            <img src="Images/Home/4.jpg" alt="Image 6">
+        </div>
+    </div>
     <div class="container">
         <div class="homePageAlignment">
 
@@ -87,27 +101,22 @@
             </ul>
         </div>
     </div>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll(".slide img");
+
+        function showSlide() {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex = (slideIndex + 1) % slides.length;
+            slides[slideIndex].style.display = "block";
+            setTimeout(showSlide, 4000); 
+        }
+
+        showSlide();
+    </script>
 </body>
-
-    <footer class="introfooter">
-
-        <div>
-            <img src="Images/InvertedLogo.jpg" class="introfooterimage">
-        </div>
-        <div class="introfooterbox"></div>
-        <div class="introfootertext">
-            <div class="introcontactinfo">
-                <p>Justin Angstadt (Owner)<br>
-                    Lic#1047409<br>
-                    Redwood City, CA, 94061</p>
-                <div class="introfooterbox2"></div>
-                <p>
-                    650-465-8337<br>
-                    jgaconstruction24@gmail.com<br>
-                </p>
-            </div>
-
-        </div>
-    </footer>
 
 </html>
