@@ -1324,7 +1324,7 @@ footer {
     }
 
     .homelogo {
-        margin-left: 10%;
+        margin-left: 0%;
         width: 250px;
         height: 200px;
         padding-bottom: 25px;
@@ -1339,7 +1339,7 @@ footer {
         color: white;
         text-align: center;
         margin-top: 0%;
-        margin-left: 9%;
+        margin-left: 0%;
         height: 96.5%;
         width: 260px;
         padding-top: 20px;
@@ -1361,7 +1361,7 @@ footer {
         color: white;
         text-align: left;
         margin-top: 0px;
-        margin-left: 15%;
+        margin-left: 0%;
         align-items: center;
         text-align: center;
         width: 210%;
@@ -1586,7 +1586,7 @@ footer {
         padding: 0;
         display: inline-flex;
         width: 400px;
-       margin-right: -42%;
+       margin-right: 0%;
     }
 
     .galleryheader nav ul li a {
@@ -1615,18 +1615,18 @@ footer {
     }
 
     .intro {
-        margin-top: 30%;
+        margin-top: 0%;
         height: 100%;
         text-align: center;
         font-size: 18px;
         font-family: "Bourbon W00 Rough";
         color: white;
         background-color: black;
-        margin-left: -10%;
+        margin-left: 0%;
     }
 
     .Contact {
-        margin-top: 30%;
+        margin-top: 0%;
         height: 70%;
     }
 
@@ -1642,7 +1642,7 @@ footer {
         color: white;
         font-size: 20px;
         font-weight: bold;
-        margin-left: -90%;
+        margin-left: 0%;
     }
     .insta {
         text-decoration: none;
@@ -1650,7 +1650,7 @@ footer {
         color: white;
         font-size: 20px;
         font-weight: bold;
-        margin-left: -60%;
+        margin-left: 0%;
     }
 
     .double_element {
