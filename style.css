@@ -747,9 +747,7 @@ footer {
         align-items: center;
         flex-direction: column;
         font-size: 24px;
-        font-weight: bold;
-        z-index: 2; /* Put the container above the slideshow */
-        text-decoration: none;
+       
        
         margin-left: 10%;
         margin-top: -7%;
@@ -782,7 +780,6 @@ footer {
     .JGAwordingforlogo {
         font-family: "Bourbon W00 Lines";
         font-size: 30px;
-        font-weight: bold;
         color: white;
         text-align: center;
         margin-top: 3.5%;
@@ -806,7 +803,6 @@ footer {
         font-family: "Bourbon W00 Lines";
         font-size: 30px;
         color: white;
-        text-decoration: none;
         text-align: left;
         margin-top: 10px;
         margin-left: 15%;
