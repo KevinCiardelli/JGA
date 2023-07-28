@@ -261,7 +261,7 @@ body {
     position: absolute;
     line-height: 2.0;
     min-width: 450px;
-    font-family: 'Barlow';
+    font-family: "Bourbon W00 Lines";
     text-align: left;
     color: white;
     font-weight: bold;
@@ -334,7 +334,7 @@ footer {
     padding-top: 20px;
     padding-right: 150px;
     padding-left: 150px;
-    font-family: 'Barlow';
+    font-family: "Bourbon W00 Lines";
     color: white;
 }
 
@@ -494,7 +494,7 @@ footer {
     font-size: 32px;
     font-weight: bold;
     color: black;
-    font-family: 'Barlow';
+    font-family: "Bourbon W00 Lines";
     padding-bottom: 20px;
 }
 
@@ -687,7 +687,7 @@ footer {
 
 .review {
     text-align: center;
-    font-family: 'Barlow';
+    font-family: "Bourbon W00 Lines";
     color: white;
     margin: 30px;
 }
@@ -781,7 +781,7 @@ footer {
 
     /*JGA LOGO*/
     .JGAwordingforlogo {
-        font-family: 'Barlow';
+        font-family: "Bourbon W00 Lines";
         font-size: 30px;
         font-weight: bold;
         color: white;
@@ -804,7 +804,7 @@ footer {
     }
 
     .homePageAlignment ul li a {
-        font-family: 'Barlow';
+        font-family: "Bourbon W00 Lines";
         font-size: 30px;
         color: white;
         text-decoration: none;
@@ -944,7 +944,7 @@ footer {
     .introparagraph2 {
         position: absolute;
         line-height: 2.0;
-        font-family: 'Barlow';
+        font-family: "Bourbon W00 Lines";
         text-align: left;
         color: white;
         font-weight: bold;
@@ -1069,7 +1069,7 @@ footer {
         height: 100%;
         text-align: center;
         font-size: 18px;
-        font-family: 'Barlow';
+        font-family: "Bourbon W00 Lines";
         color: white;
         background-color: black;
         margin-left: -10%;
@@ -1156,7 +1156,7 @@ footer {
 
     .review {
         text-align: center;
-        font-family: 'Barlow';
+        font-family: "Bourbon W00 Lines";
         color: white;
         margin: 30px;
     }
