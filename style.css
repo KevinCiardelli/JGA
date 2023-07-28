@@ -1256,7 +1256,7 @@ footer {
 }
 
 
-@media screen and (min-width: 500px, max-width: 1000px) {
+@media screen and (min-width: 500px) and (max-width: 1000px) {
     html {
         margin: 0;
         padding: 0;
