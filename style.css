@@ -29,8 +29,8 @@ body {
 
 .slideshow-container {
     position: relative;
-    width: 100vw; /* Full viewport width */
-    height: 100vh; /* Full viewport height */
+    width: 100vw; 
+    height: 100vh; 
     text-align: center;
     z-index: 1; /* Put the slideshow above other content */
 }
@@ -262,7 +262,7 @@ body {
     position: absolute;
     line-height: 2.0;
     min-width: 450px;
-    font-family: "Bourbon W00 Lines";
+    font-family: "Barlows";
     text-align: left;
     color: white;
     font-weight: bold;
@@ -344,6 +344,8 @@ footer {
     padding-left: 40px;
     padding-top: 20px;
     margin-left: -1%;
+    text-decoration: none;
+    color: white;
 
 }
 
@@ -354,6 +356,9 @@ footer {
     height: 70px;
     padding-top: 10px;
     border-radius: 100%;
+    text-decoration: none;
+    color: white;
+
 
 }
 
