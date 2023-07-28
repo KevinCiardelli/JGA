@@ -90,7 +90,7 @@ body {
 
 /*JGA LOGO*/
 .JGAwordingforlogo {
-    font-family: "Bourbon W00 Lines";
+    font-family: "Bourbon W00 Rough";
     font-size: 40px;
     color: rgb(255, 255, 255);
     text-align: center;
@@ -103,7 +103,7 @@ body {
 
 /*Listing formatting*/
 .homePageAlignment ul li a {
-    font-family: "Bourbon W00 Lines";
+    font-family: "Bourbon W00 Rough";
     font-size: 40px;
     color: white;
     text-decoration: none;
