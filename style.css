@@ -1256,7 +1256,7 @@ footer {
 }
 
 
-@media screen and (min-width: 500px) and (max-width: 1000px) {
+@media screen and (min-width: 501px) and (max-width: 1000px) {
     html {
         margin: 0;
         padding: 0;
@@ -1329,16 +1329,16 @@ footer {
         height: 200px;
         padding-bottom: 25px;
         padding-top: 25px;
-        margin-top: 20%;
+        margin-top: 0%;
     }
 
     /*JGA LOGO*/
     .JGAwordingforlogo {
         font-family: "Bourbon W00 Rough";
-        font-size: 30px;
+        font-size: 50px;
         color: white;
         text-align: center;
-        margin-top: 3.5%;
+        margin-top: 0%;
         margin-left: 9%;
         height: 96.5%;
         width: 260px;
@@ -1357,10 +1357,10 @@ footer {
 
     .homePageAlignment ul li a {
         font-family: "Bourbon W00 Rough";
-        font-size: 30px;
+        font-size: 50px;
         color: white;
         text-align: left;
-        margin-top: 10px;
+        margin-top: 0px;
         margin-left: 15%;
         align-items: center;
         text-align: center;
