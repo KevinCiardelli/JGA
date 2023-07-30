@@ -1032,7 +1032,7 @@ footer {
         padding: 0;
         display: inline-flex;
         width: 400px;
-       margin-right: 0%;
+       margin-right: -40%;
     }
 
     .galleryheader nav ul li a {
