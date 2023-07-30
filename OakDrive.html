@@ -3,6 +3,7 @@
 <head>
   <script>
     var images = [
+    "Images/OakDriveRemodel/11.jpg",
     "Images/OakDriveRemodel/1.jpg",
     "Images/OakDriveRemodel/2.jpg",
     "Images/OakDriveRemodel/3.jpg",
@@ -11,19 +12,18 @@
     "Images/OakDriveRemodel/7.jpg",
     "Images/OakDriveRemodel/8.jpg",
     "Images/OakDriveRemodel/9.jpg",
-    "Images/OakDriveRemodel/10.jpg",
-    "Images/OakDriveRemodel/11.jpg"
+    "Images/OakDriveRemodel/10.jpg"
     
     ];
     
-    var currentImageIndex = 0;
+    var currentImageIndex = -1;
     var slideshowImage = null;
     
     function nextImage() {
-      if(currentImageIndex > images.size){
+      if(currentImageIndex == 9){
         currentImageIndex = -1
       }
-      currentImageIndex = (currentImageIndex + 1) % images.length;
+      currentImageIndex = (currentImageIndex + 1);
       setTimeout(function() {
         slideshowImage.src = images[currentImageIndex];
         slideshowImage.classList.remove("slide");
@@ -31,11 +31,19 @@
     }
 
     function previousImage() {
-      currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+      if(currentImageIndex == 0){
+        currentImageIndex = 10
+      }
+      if(currentImageIndex == -1){
+        currentImageIndex = 10
+      }
+     
+      currentImageIndex = (currentImageIndex - 1);
       setTimeout(function() {
         slideshowImage.src = images[currentImageIndex];
         slideshowImage.classList.remove("slide");
       }, 100); // Adjust the duration of the transition as needed (in milliseconds)
+    
     }
     
     document.addEventListener("DOMContentLoaded", function() {
@@ -45,11 +53,11 @@
     })
     document.addEventListener("DOMContentLoaded", function() {
       slideshowImage = document.getElementById("slideshow-image");
-      var nextButton = document.getElementById("previous-button");
-      nextButton.addEventListener("click", nextImage);
+      var previousButton = document.getElementById("previous-button");
+      previousButton.addEventListener("click", previousImage);
     });
   </script>
-  <title>Green Oaks</title>
+  <title>Oak Drive Remodel</title>
   <meta name="description" content="Gallery for JGA Construction where quality meets quantity">
   <link rel="stylesheet" href="style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1" , user-scalable="no" />

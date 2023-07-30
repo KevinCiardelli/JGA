@@ -3,22 +3,22 @@
 <head>
   <script>
     var images = [
+    "Images/PoolHouse/1.jpg",
     "Images/PoolHouse/2.jpg",
     "Images/PoolHouse/3.jpg",
     "Images/PoolHouse/4.jpg",
     "Images/PoolHouse/5.jpg",
-    "Images/PoolHouse/6.jpg",
-    "Images/PoolHouse/1.jpg"
+    "Images/PoolHouse/6.jpg"
     ];
     
-    var currentImageIndex = 0;
+    var currentImageIndex = -1;
     var slideshowImage = null;
     
     function nextImage() {
-      if(currentImageIndex > images.size){
+      if(currentImageIndex == 4){
         currentImageIndex = -1
       }
-      currentImageIndex = (currentImageIndex + 1) % images.length;
+      currentImageIndex = (currentImageIndex + 1);
       setTimeout(function() {
         slideshowImage.src = images[currentImageIndex];
         slideshowImage.classList.remove("slide");
@@ -26,11 +26,19 @@
     }
 
     function previousImage() {
-      currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+      if(currentImageIndex == 0){
+        currentImageIndex = 5
+      }
+      if(currentImageIndex == -1){
+        currentImageIndex = 5
+      }
+     
+      currentImageIndex = (currentImageIndex - 1);
       setTimeout(function() {
         slideshowImage.src = images[currentImageIndex];
         slideshowImage.classList.remove("slide");
       }, 100); // Adjust the duration of the transition as needed (in milliseconds)
+    
     }
     
     document.addEventListener("DOMContentLoaded", function() {
@@ -40,11 +48,11 @@
     })
     document.addEventListener("DOMContentLoaded", function() {
       slideshowImage = document.getElementById("slideshow-image");
-      var nextButton = document.getElementById("previous-button");
-      nextButton.addEventListener("click", nextImage);
+      var previousButton = document.getElementById("previous-button");
+      previousButton.addEventListener("click", previousImage);
     });
   </script>
-  <title>Green Oaks</title>
+  <title>Pool House</title>
   <meta name="description" content="Gallery for JGA Construction where quality meets quantity">
   <link rel="stylesheet" href="style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1" , user-scalable="no" />
