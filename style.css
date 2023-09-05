@@ -213,7 +213,7 @@ body {
 .Home2Body nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 6px;
-
+    border-bottom: 4px solid #fff;
 }
 
 /* ABout Us Background Picture*/
@@ -488,7 +488,7 @@ footer {
 .galleryheader nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 6px;
-
+    border-bottom: 4px solid #fff;
 }
 
 .head {
