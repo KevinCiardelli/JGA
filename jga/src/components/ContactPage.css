@@ -1,0 +1,115 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center elements horizontally */
+    color: white;
+    background: linear-gradient(to bottom, black, rgb(66, 66, 66));
+    padding: 50px;
+    height: 80vh;
+    width: 100%;
+}
+
+.contact-container h1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.contact-container hr {
+    width: 80%;
+    margin: 20px auto;
+    border: 0;
+    border-top: 1px solid white;
+}
+
+.contact-image {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center content inside the div */
+    filter: drop-shadow(10px 10px 10px black);
+    width: 20%;
+    height: auto;
+    margin-bottom: 30px; /* Space below the image */
+}
+
+.double_element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.contact-information-container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px; /* Space above the contact information */
+}
+
+.icon-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px; /* Circle size */
+    height: 80px; /* Circle size */
+    border-radius: 50%; /* Make it a circle */
+    border: 2px solid white;
+    margin-bottom: 10px; /* Space between icon and text */
+}
+
+.icon-circle .fas {
+    font-size: 48px;
+    color: white; /* Icon color */
+}
+
+/* Specific style for Instagram icon */
+.icon-circle .fa-instagram {
+    font-size: 60px; /* Increase the size as needed */
+}
+
+.fullemail,
+.fullphone,
+.fulladdress,
+.insta {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white; /* Adjust color as needed */
+    margin: 0;
+    text-align: center; /* Center the text */
+}
+
+.fullemail:hover,
+.fullphone:hover,
+.fulladdress:hover,
+.insta:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 960px) {
+    .contact-container {
+        text-align: center;
+        color: white;
+        background: linear-gradient(to bottom, black, rgb(66, 66, 66));
+        padding: 50px;
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .contact-information-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contact-image {
+        display: none; /* Hide image on mobile screens */
+    }
+
+    .double_element {
+        margin: 20px 0;
+    }
+}

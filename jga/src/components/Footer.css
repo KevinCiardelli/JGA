@@ -1,0 +1,39 @@
+.footer-container {
+    height: 130px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .footerimage {
+    padding-left: 30px;
+    height: auto;
+  }
+  
+  .footer-text {
+    padding-left: 30px;
+    padding-top: 40px;
+  }
+  
+  p {
+    color: white;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .footer-container {
+      height: 180px;
+      flex-direction: row;
+    }
+  
+    .footerimage {
+      display: none; /* Hide image on mobile screens */
+    }
+  
+    .footer-text {
+      font-size: 15px;
+      padding-left: 30px;
+      padding-top: 40px;
+    }
+  }
+  
